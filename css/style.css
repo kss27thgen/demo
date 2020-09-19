@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0; }
+  *::before {
+    vertical-align: middle; }
+  *::after {
+    vertical-align: middle; }
+
+script, style {
+  display: none !important; }
+
+html {
+  font-size: 12px; }
+  @media (min-width: 400px) {
+    html {
+      font-size: 12.5px; } }
+  @media (min-width: 600px) {
+    html {
+      font-size: 13px; } }
+  @media (min-width: 800px) {
+    html {
+      font-size: 13.5px; } }
+  @media (min-width: 1000px) {
+    html {
+      font-size: 14px; } }
+  @media (min-width: 1200px) {
+    html {
+      font-size: 14.5px; } }
+  @media (min-width: 1400px) {
+    html {
+      font-size: 15px; } }
+
+body {
+  min-width: 320px;
+  color: #222;
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.5; }
+
+a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: .3s; }
+  a[href^=tel] {
+    cursor: initial;
+    pointer-events: none; }
+  a[href] {
+    cursor: pointer; }
+    a[href]:hover {
+      opacity: .7; }
+
+/* block */
+main, article, section, header, footer, aside, nav {
+  display: block; }
+
+h1 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1rem;
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+h2 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1rem;
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+h3 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1rem;
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+h4 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+h5 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+p {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  line-height: 2; }
+
+ul {
+  padding: 0; }
+
+ol {
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+dt {
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+dd {
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+th {
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+td {
+  word-break: break-all;
+  overflow-wrap: break-word; }
+
+address {
+  font-style: normal; }
+
+iframe {
+  max-width: 100%; }
+
+code {
+  font-family: "Consolas", "Menlo", "Courier New", "Courier", "メイリオ", "Meiryo", monospace; }
+
+video {
+  display: block;
+  max-width: 100%; }
+
+/* inline */
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden; }
+
+strong, em, i {
+  font-style: normal; }
+
+time {
+  word-break: keep-all; }
+
+mark {
+  background-color: transparent; }
+
+u {
+  text-decoration: none; }
+
+/* form */
+input {
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 2px;
+  padding: 0 .5em; }
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 100em #FAFAFA inset; }
+
+[type=text] {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  min-height: 2.5em; }
+
+[type=email] {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  min-height: 2.5em; }
+
+[type=password] {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  min-height: 2.5em; }
+
+[type=checkbox] {
+  vertical-align: middle; }
+
+[type=radio] {
+  vertical-align: middle; }
+
+[type=file] {
+  max-width: 100%;
+  padding: .5em; }
+
+[type=submit] {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  cursor: pointer; }
+
+[type=button] {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  cursor: pointer; }
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 5em;
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 2px;
+  padding: .5em; }
+
+select {
+  max-width: 100%;
+  min-height: 2.5em;
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  background-color: #FFF;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 2px;
+  vertical-align: middle;
+  padding: .5em; }
+
+fieldset {
+  border: 0;
+  padding: 0; }
+
+legend {
+  display: block;
+  width: 100%;
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: bold;
+  padding: .5em;
+  float: left; }
+  legend + * {
+    clear: both; }
+
+label {
+  display: inline-block;
+  cursor: pointer; }
+
+button {
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 2px;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  padding: .5em;
+  cursor: pointer; }
+
+/* fancybox fix */
+#fancybox-wrap {
+  box-sizing: content-box; }
+
+section h1 {
+  display: inline-block;
+  color: #FFF;
+  background-color: red;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 2px;
+  padding: 0.5em 2em; }

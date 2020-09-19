@@ -1,0 +1,203 @@
+$NAME: reset
+
+/* #{$NAME} */
+
+*
+  box-sizing: border-box
+  margin: 0
+  &::before
+    vertical-align: middle
+  &::after
+    vertical-align: middle
+
+script, style
+  display: none !important
+
+html
+  font-size: $initial-fontsize
+  @if $PC and $responsive
+    $step: 200
+    $i: 400
+    $font-size: $initial-fontsize
+    @while $i < 1500
+      $font-size: $font-size + .5
+      +w($i)
+        font-size: $font-size
+      $i: $i + $step
+
+body
+  min-width: 320px
+  color: $initial-color
+  font-family: $sans-serif
+  line-height: 1.5
+a
+  color: inherit
+  font:
+    size: inherit
+    weight: inherit
+  line-height: inherit
+  text-decoration: none
+  @if $PC
+    transition: .3s
+    &[href^=tel]
+      cursor: initial
+      pointer-events: none
+    &[href]
+      cursor: pointer
+      &:hover
+        opacity: .7
+
+
+/* block */
+main, article, section, header, footer, aside, nav
+  display: block
+h1
+  font:
+    family: $font-yu
+    size: 1rem
+  +word-wrap
+h2
+  font:
+    family: $font-yu
+    size: 1rem
+  +word-wrap
+h3
+  font:
+    family: $font-yu
+    size: 1rem
+  +word-wrap
+h4
+  font-family: $font-yu
+  +word-wrap
+h5
+  font-family: $font-yu
+  +word-wrap
+p
+  +word-wrap
+  line-height: 2
+ul
+  padding: 0
+ol
+  padding: 0
+li
+  list-style-type: none
+dt
+  +word-wrap
+dd
+  +word-wrap
+th
+  +word-wrap
+td
+  +word-wrap
+address
+  font-style: normal
+iframe
+  max-width: 100%
+code
+  font-family: $monospace
+video
+  display: block
+  max-width: 100%
+
+/* inline */
+img
+  max-width: 100%
+  height: auto
+  border: none
+  vertical-align: middle
+  -webkit-backface-visibility: hidden
+strong, em, i
+  font-style: normal
+time
+  word-break: keep-all
+mark
+  background-color: transparent
+u
+  text-decoration: none
+
+/* form */
+form
+  // font-family: $sans-serif
+  // font-size: $initial-formFontSize
+input
+  font-family: $sans-serif
+  font-size: $initial-formFontSize
+  max-width: 100%
+  border: $border-gray
+    radius: 2px
+  padding: 0 .5em
+  &:-webkit-autofill
+    -webkit-box-shadow: 0 0 0 100em #FAFAFA inset
+[type=text]
+  +appearance-none
+  min-height: $inputHeight
+[type=email]
+  +appearance-none
+  min-height: $inputHeight
+[type=password]
+  +appearance-none
+  min-height: $inputHeight
+[type=checkbox]
+  vertical-align: middle
+[type=radio]
+  vertical-align: middle
+[type=file]
+  max-width: 100%
+  padding: .5em
+[type=submit]
+  +appearance-none
+  @if $PC
+    cursor: pointer
+[type=button]
+  +appearance-none
+  @if $PC
+    cursor: pointer
+textarea
+  width: 100%
+  max-width: 100%
+  min-height: 5em
+  font-family: $sans-serif
+  font-size: $initial-formFontSize
+  border: $border-gray
+    radius: 2px
+  padding: .5em
+select
+  max-width: 100%
+  min-height: $inputHeight
+  font-family: $sans-serif
+  font-size: $initial-formFontSize
+  background-color: #FFF
+  border: $border-gray
+    radius: 2px
+  vertical-align: middle
+  padding: .5em
+fieldset
+  border: 0
+  padding: 0
+legend
+  display: block
+  width: 100%
+  font:
+    family: $font-yu
+    weight: bold
+  padding: .5em
+  float: left
+  + *
+    clear: both
+label
+  display: inline-block
+  @if $PC
+    cursor: pointer
+button
+  font-family: $sans-serif
+  font-size: $initial-formFontSize
+  border: $border-gray
+    radius: 2px
+  +appearance-none
+  padding: .5em
+  @if $PC
+    cursor: pointer
+
+/* fancybox fix */
+#fancybox-wrap
+  box-sizing: content-box

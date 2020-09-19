@@ -1,0 +1,49 @@
+@import import
+
+form
+  dt
+    +not-first
+      margin-top: .5em
+    // default
+    +w600
+      margin-top: 0
+    &.required::after
+      content: "*"
+      margin-left: 1em
+    line-height: 2
+    padding: .5em
+  dd
+    line-height: 2
+    padding: .5em
+  img
+    width: auto
+    background: #FFF
+
+  input
+    &[name*=name]
+      width: 14em
+    &[name*=kana]
+      width: 14em
+    &[name*=email]
+      width: 20em
+    &[name*=tel]
+      width: 10em
+    &[name*=address]
+      width: 100%
+    &[name*=submit]
+      +padding(null, 5em)
+
+// cf7
+.wpcf7
+  [role=alert]
+    color: $red
+  .wpcf7-response-output
+    +centering($mw: 800px, $margin: .5em)
+  .wpcf7-validation-errors
+    +invert($red)
+    border: none
+    padding: 1em
+  .wpcf7-mail-sent-ok
+    +invert($blue)
+    border: none
+    padding: 1em
