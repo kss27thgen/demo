@@ -1,0 +1,249 @@
+h3
+    &.sectionTitle
+        +relative
+        font-size: 2em
+        &:after
+            +absolute
+            content: ''
+            bottom: 0
+            left: 0
+            width: 30%
+            height: 2px
+            background-color: $color-yellow
+a
+    &.allView
+        display: block
+        width: 10em
+        font-weight: bold
+        text-align: center
+        color: #555
+        border: 1.5px solid $color-yellow
+        padding: .5em 0
+        margin: 0 auto
+
+header
+    +flexbox($ai: center)
+    color: #fff
+    background-color: $color-pink
+    padding: 1em 2.5em
+    h1
+        font-size: 2.5em
+    nav
+        +flexbox($ai: center)
+        margin-left: auto
+        font-size: 1.25em
+    .button
+        display: none
+        border: 1px solid #fff
+        padding: .5em 1em
+        margin-right: 1em
+        +w(800)
+            display: block
+    .link
+        margin: 0 1em
+        &::before
+            +fas()
+.mvSection
+    color: #fff
+    background-image: url('../../asset/mv.jpg')
+    background-size: cover
+    background-position: center
+    padding: 5em 2.5em
+    .catch
+        font-size: 1.75em
+        text-align: center
+        text-shadow: 1px 1px 1px #aaa
+        margin-bottom: 2.5em
+        +w(800)
+            font-size: 2.25em
+    .searchBox
+        text-align: center
+        em
+            font-size: 1.25em
+            text-shadow: 1px 1px 1px #aaa
+        .selects
+            +flexbox($wrap: wrap, $jc: center)
+            margin-bottom: 1em
+            select
+                font-size: .9em
+                margin: .25em
+        .searchBar
+            +flexbox($jc: center)
+            input[type=text]
+                width: 20em
+            input[type=submit]
+                color: #fff
+                background-color: $color-pink
+
+.copySection
+    padding: 5em 1.5em 2.5em
+    text-align: center
+    h3
+        +relative
+        font-size: 2em
+        padding-bottom: .5em
+        margin-bottom: .5em
+        &:after
+            +absolute
+            +translateX(-50%)
+            content: ''
+            bottom: 0
+            left: 50%
+            width: 5em
+            height: 2px
+            background-color: $color-yellow
+    p
+        font-size: 1.5em
+
+.areaSection
+    +centering(1000px)
+    padding: 2.5em 1.5em 5em
+    h3
+        text-align: center
+        font-size: 1.5em
+        margin-bottom: 1em
+    ul
+        +flexbox($wrap: wrap, $jc: center)
+    li
+        +flexitem(0, 1, split(3.5))
+        color: #fff
+        font:
+            size: 1.5em
+            weight: bold
+        border-radius: 4px
+        background-size: contain
+        margin: .25em
+        &.hokkaido
+            +img-bg($url: '../../images/hokkaido.jpeg')
+        &.tokyo
+            +img-bg($url: '../../images/tokyo.jpg')
+        &.yokohama
+            +img-bg($url: '../../images/yokohama.jpeg')
+        &.osaka
+            +img-bg($url: '../../images/osaka.jpg')
+        &.okinawa
+            +img-bg($url: '../../images/okinawa.jpeg')
+        &.kobe
+            +img-bg($url: '../../images/kobe.jpeg')
+        +w(1000)
+            +flexitem(0, 1, split(6.5))
+        a
+            +flexbox($jc: center, $ai: center)
+            width: 100%
+            height: 4em
+
+.aboutSection
+    padding: 2.5em 1.5em
+    .upper
+        +flexbox($jc: center, $wrap: wrap, $ai: center)
+        margin-bottom: 2.5em
+        .left
+            +relative
+            &:after
+                +absolute($top: 0em , $bottom: 0, $left: 0em, $right: 0)
+                +translate(-1em, -1em)
+                content: ''
+                background: linear-gradient(45deg, $color-pink, $color-yellow)
+                z-index: -1
+            img
+                height: 20em
+        .right
+            margin-left: -2.5em
+            z-index: 5
+            h3
+                font-size: 1.25em
+                background: linear-gradient(transparent 40%, $color-yellow 20%)
+    .bottom
+        ul
+            +flexbox($wrap: wrap, $jc: center)
+        li
+            margin: 1em 2em
+            text-align: center
+            img
+                height: 7.5em
+                margin-bottom: 1em
+            em
+                display: block
+
+.toursSection
+    +centering(1200px)
+    padding: 2.5em 1.5em
+    .subTitle
+        margin-bottom: 1em
+    h4
+        display: inline-block
+        font-size: 1.5em
+        background: linear-gradient(transparent 60%, $color-yellow 10%)
+    ul
+        +flexbox($wrap: wrap)
+        margin-bottom: 2em
+    li
+        +flexitem(0, 1, split(2.3))
+        +boxshadow(.5px 2px 1px #ddd)
+        border-radius: 3px
+        margin: .5em
+        +w(1000px)
+            +flexitem(0, 1, split(4.3))
+
+.card
+    .upper
+        +relative
+        height: 10em
+        &.sushi
+            +img-bg($url: '../../images/sushi.png')
+        &.tsukiji
+            +img-bg($url: '../../images/tsukiji.png')
+        &.fushimi
+            +img-bg($url: '../../images/fushimi.jpeg')
+        &.osakaNight
+            +img-bg($url: '../../images/osaka-night.jpeg')
+        &.tokyoTower
+            +img-bg($url: '../../images/tokyo-tower.jpeg')
+        &.kinkaku
+            +img-bg($url: '../../images/kinkaku.jpeg')
+        &.nunobiki
+            +img-bg($url: '../../images/nunobiki.jpeg')
+        &.kenrokuen
+            +img-bg($url: '../../images/kenrokuen.jpeg')
+        .badge
+            +absolute($top: .25em, $left: .25em)
+            color: #fff
+            background-color: $color-pink
+            border-radius: 5px
+            padding: .2em
+    .bottom
+        font-size: 1.25em
+        padding: .5em
+        .price
+            display: block
+            text-align: end
+
+.newsSection
+    +centering(1200px)
+    padding: 2.5em 1.5em 5em
+    h3
+        margin-bottom: 1em
+    ul
+        width: 90%
+        margin: 0 auto 2em
+    li
+        +flexbox($ai: center)
+        border-bottom: 1px solid #ccc
+        margin-bottom: 1em
+        small
+            +flexitem(0, 1, 20%)
+        p
+            +flexitem(0, 1, 80%)
+            font-size: 1.25em
+
+footer
+    color: #fff
+    background-color: $color-pink
+    padding: 2.5em 0
+    text-align: center
+    nav
+        +flexbox($jc: center, $wrap: wrap)
+        margin-bottom: 2.5em
+        a
+            margin: .5em 1em
+            font-size: 1.25em

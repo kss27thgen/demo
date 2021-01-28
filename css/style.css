@@ -259,10 +259,383 @@ button {
 #fancybox-wrap {
   box-sizing: content-box; }
 
-section h1 {
-  display: inline-block;
-  color: #FFF;
-  background-color: red;
-  border: 1px solid rgba(128, 128, 128, 0.25);
-    border-radius: 2px;
-  padding: 0.5em 2em; }
+h3.sectionTitle {
+  position: relative;
+  font-size: 2em; }
+  h3.sectionTitle:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 30%;
+    height: 2px;
+    background-color: #FFD700; }
+
+a.allView {
+  display: block;
+  width: 10em;
+  font-weight: bold;
+  text-align: center;
+  color: #555;
+  border: 1.5px solid #FFD700;
+  padding: .5em 0;
+  margin: 0 auto; }
+
+header {
+  display: -ms-flexbox;
+  /* prefix -> -webkit-*/
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  /* no prefix*/
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #fdaba9;
+  padding: 1em 2.5em; }
+  header h1 {
+    font-size: 2.5em; }
+  header nav {
+    display: -ms-flexbox;
+    /* prefix -> -webkit-*/
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    /* no prefix*/
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    font-size: 1.25em; }
+  header .button {
+    display: none;
+    border: 1px solid #fff;
+    padding: .5em 1em;
+    margin-right: 1em; }
+    @media (min-width: 800px) {
+      header .button {
+        display: block; } }
+  header .link {
+    margin: 0 1em; }
+    header .link::before {
+      font-family: 'FontAwesome solid';
+      vertical-align: baseline; }
+
+.mvSection {
+  color: #fff;
+  background-image: url("../../asset/mv.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5em 2.5em; }
+  .mvSection .catch {
+    font-size: 1.75em;
+    text-align: center;
+    text-shadow: 1px 1px 1px #aaa;
+    margin-bottom: 2.5em; }
+    @media (min-width: 800px) {
+      .mvSection .catch {
+        font-size: 2.25em; } }
+  .mvSection .searchBox {
+    text-align: center; }
+    .mvSection .searchBox em {
+      font-size: 1.25em;
+      text-shadow: 1px 1px 1px #aaa; }
+    .mvSection .searchBox .selects {
+      display: -ms-flexbox;
+      /* prefix -> -webkit-*/
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      -webkit-justify-content: center;
+      /* no prefix*/
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1em; }
+      .mvSection .searchBox .selects select {
+        font-size: .9em;
+        margin: .25em; }
+    .mvSection .searchBox .searchBar {
+      display: -ms-flexbox;
+      /* prefix -> -webkit-*/
+      display: -webkit-flex;
+      -webkit-justify-content: center;
+      /* no prefix*/
+      display: flex;
+      justify-content: center; }
+      .mvSection .searchBox .searchBar input[type=text] {
+        width: 20em; }
+      .mvSection .searchBox .searchBar input[type=submit] {
+        color: #fff;
+        background-color: #fdaba9; }
+
+.copySection {
+  padding: 5em 1.5em 2.5em;
+  text-align: center; }
+  .copySection h3 {
+    position: relative;
+    font-size: 2em;
+    padding-bottom: .5em;
+    margin-bottom: .5em; }
+    .copySection h3:after {
+      position: absolute;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      content: '';
+      bottom: 0;
+      left: 50%;
+      width: 5em;
+      height: 2px;
+      background-color: #FFD700; }
+  .copySection p {
+    font-size: 1.5em; }
+
+.areaSection {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.5em 1.5em 5em; }
+  .areaSection h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 1em; }
+  .areaSection ul {
+    display: -ms-flexbox;
+    /* prefix -> -webkit-*/
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    /* no prefix*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .areaSection li {
+    -webkit-flex: 0 1 28.57143%;
+    flex: 0 1 28.57143%;
+    width: 28.57143%;
+    max-width: 28.57143%;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 4px;
+    background-size: contain;
+    margin: .25em; }
+    .areaSection li.hokkaido {
+      background: url(../../images/hokkaido.jpeg) no-repeat center center;
+        background-size: cover; }
+    .areaSection li.tokyo {
+      background: url(../../images/tokyo.jpg) no-repeat center center;
+        background-size: cover; }
+    .areaSection li.yokohama {
+      background: url(../../images/yokohama.jpeg) no-repeat center center;
+        background-size: cover; }
+    .areaSection li.osaka {
+      background: url(../../images/osaka.jpg) no-repeat center center;
+        background-size: cover; }
+    .areaSection li.okinawa {
+      background: url(../../images/okinawa.jpeg) no-repeat center center;
+        background-size: cover; }
+    .areaSection li.kobe {
+      background: url(../../images/kobe.jpeg) no-repeat center center;
+        background-size: cover; }
+    @media (min-width: 1000px) {
+      .areaSection li {
+        -webkit-flex: 0 1 15.38462%;
+        flex: 0 1 15.38462%;
+        width: 15.38462%;
+        max-width: 15.38462%; } }
+    .areaSection li a {
+      display: -ms-flexbox;
+      /* prefix -> -webkit-*/
+      display: -webkit-flex;
+      -webkit-justify-content: center;
+      -webkit-align-items: center;
+      /* no prefix*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 4em; }
+
+.aboutSection {
+  padding: 2.5em 1.5em; }
+  .aboutSection .upper {
+    display: -ms-flexbox;
+    /* prefix -> -webkit-*/
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    /* no prefix*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5em; }
+    .aboutSection .upper .left {
+      position: relative; }
+      .aboutSection .upper .left:after {
+        position: absolute;
+        top: 0em;
+        right: 0;
+        bottom: 0;
+        left: 0em;
+        -webkit-transform: translate(-1em, -1em);
+        transform: translate(-1em, -1em);
+        content: '';
+        background: linear-gradient(45deg, #fdaba9, #FFD700);
+        z-index: -1; }
+      .aboutSection .upper .left img {
+        height: 20em; }
+    .aboutSection .upper .right {
+      margin-left: -2.5em;
+      z-index: 5; }
+      .aboutSection .upper .right h3 {
+        font-size: 1.25em;
+        background: linear-gradient(transparent 40%, #FFD700 20%); }
+  .aboutSection .bottom ul {
+    display: -ms-flexbox;
+    /* prefix -> -webkit-*/
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    /* no prefix*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .aboutSection .bottom li {
+    margin: 1em 2em;
+    text-align: center; }
+    .aboutSection .bottom li img {
+      height: 7.5em;
+      margin-bottom: 1em; }
+    .aboutSection .bottom li em {
+      display: block; }
+
+.toursSection {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.5em 1.5em; }
+  .toursSection .subTitle {
+    margin-bottom: 1em; }
+  .toursSection h4 {
+    display: inline-block;
+    font-size: 1.5em;
+    background: linear-gradient(transparent 60%, #FFD700 10%); }
+  .toursSection ul {
+    display: -ms-flexbox;
+    /* prefix -> -webkit-*/
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    /* no prefix*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2em; }
+  .toursSection li {
+    -webkit-flex: 0 1 43.47826%;
+    flex: 0 1 43.47826%;
+    width: 43.47826%;
+    max-width: 43.47826%;
+    -webkit-box-shadow: 0.5px 2px 1px #ddd;
+    -ms-box-shadow: 0.5px 2px 1px #ddd;
+    box-shadow: 0.5px 2px 1px #ddd;
+    border-radius: 3px;
+    margin: .5em; }
+    @media (min-width: 1000px) {
+      .toursSection li {
+        -webkit-flex: 0 1 23.25581%;
+        flex: 0 1 23.25581%;
+        width: 23.25581%;
+        max-width: 23.25581%; } }
+
+.card .upper {
+  position: relative;
+  height: 10em; }
+  .card .upper.sushi {
+    background: url(../../images/sushi.png) no-repeat center center;
+      background-size: cover; }
+  .card .upper.tsukiji {
+    background: url(../../images/tsukiji.png) no-repeat center center;
+      background-size: cover; }
+  .card .upper.fushimi {
+    background: url(../../images/fushimi.jpeg) no-repeat center center;
+      background-size: cover; }
+  .card .upper.osakaNight {
+    background: url(../../images/osaka-night.jpeg) no-repeat center center;
+      background-size: cover; }
+  .card .upper.tokyoTower {
+    background: url(../../images/tokyo-tower.jpeg) no-repeat center center;
+      background-size: cover; }
+  .card .upper.kinkaku {
+    background: url(../../images/kinkaku.jpeg) no-repeat center center;
+      background-size: cover; }
+  .card .upper.nunobiki {
+    background: url(../../images/nunobiki.jpeg) no-repeat center center;
+      background-size: cover; }
+  .card .upper.kenrokuen {
+    background: url(../../images/kenrokuen.jpeg) no-repeat center center;
+      background-size: cover; }
+  .card .upper .badge {
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    color: #fff;
+    background-color: #fdaba9;
+    border-radius: 5px;
+    padding: .2em; }
+
+.card .bottom {
+  font-size: 1.25em;
+  padding: .5em; }
+  .card .bottom .price {
+    display: block;
+    text-align: end; }
+
+.newsSection {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.5em 1.5em 5em; }
+  .newsSection h3 {
+    margin-bottom: 1em; }
+  .newsSection ul {
+    width: 90%;
+    margin: 0 auto 2em; }
+  .newsSection li {
+    display: -ms-flexbox;
+    /* prefix -> -webkit-*/
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    /* no prefix*/
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em; }
+    .newsSection li small {
+      -webkit-flex: 0 1 20%;
+      flex: 0 1 20%;
+      width: 20%;
+      max-width: 20%; }
+    .newsSection li p {
+      -webkit-flex: 0 1 80%;
+      flex: 0 1 80%;
+      width: 80%;
+      max-width: 80%;
+      font-size: 1.25em; }
+
+footer {
+  color: #fff;
+  background-color: #fdaba9;
+  padding: 2.5em 0;
+  text-align: center; }
+  footer nav {
+    display: -ms-flexbox;
+    /* prefix -> -webkit-*/
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
+    /* no prefix*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2.5em; }
+    footer nav a {
+      margin: .5em 1em;
+      font-size: 1.25em; }
