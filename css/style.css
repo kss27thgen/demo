@@ -320,7 +320,7 @@ header {
 
 .mvSection {
   color: #fff;
-  background-image: url("../../asset/mv.jpg");
+  background-image: url("../asset/mv.jpg");
   background-size: cover;
   background-position: center;
   padding: 5em 2.5em; }
@@ -417,22 +417,22 @@ header {
     background-size: contain;
     margin: .25em; }
     .areaSection li.hokkaido {
-      background: url(../../images/hokkaido.jpeg) no-repeat center center;
+      background: url(../images/hokkaido.jpeg) no-repeat center center;
         background-size: cover; }
     .areaSection li.tokyo {
-      background: url(../../images/tokyo.jpg) no-repeat center center;
+      background: url(../images/tokyo.jpg) no-repeat center center;
         background-size: cover; }
     .areaSection li.yokohama {
-      background: url(../../images/yokohama.jpeg) no-repeat center center;
+      background: url(../images/yokohama.jpeg) no-repeat center center;
         background-size: cover; }
     .areaSection li.osaka {
-      background: url(../../images/osaka.jpg) no-repeat center center;
+      background: url(../images/osaka.jpg) no-repeat center center;
         background-size: cover; }
     .areaSection li.okinawa {
-      background: url(../../images/okinawa.jpeg) no-repeat center center;
+      background: url(../images/okinawa.jpeg) no-repeat center center;
         background-size: cover; }
     .areaSection li.kobe {
-      background: url(../../images/kobe.jpeg) no-repeat center center;
+      background: url(../images/kobe.jpeg) no-repeat center center;
         background-size: cover; }
     @media (min-width: 1000px) {
       .areaSection li {
@@ -549,28 +549,28 @@ header {
   position: relative;
   height: 10em; }
   .card .upper.sushi {
-    background: url(../../images/sushi.png) no-repeat center center;
+    background: url(../images/sushi.png) no-repeat center center;
       background-size: cover; }
   .card .upper.tsukiji {
-    background: url(../../images/tsukiji.png) no-repeat center center;
+    background: url(../images/tsukiji.png) no-repeat center center;
       background-size: cover; }
   .card .upper.fushimi {
-    background: url(../../images/fushimi.jpeg) no-repeat center center;
+    background: url(../images/fushimi.jpeg) no-repeat center center;
       background-size: cover; }
   .card .upper.osakaNight {
-    background: url(../../images/osaka-night.jpeg) no-repeat center center;
+    background: url(../images/osaka-night.jpeg) no-repeat center center;
       background-size: cover; }
   .card .upper.tokyoTower {
-    background: url(../../images/tokyo-tower.jpeg) no-repeat center center;
+    background: url(../images/tokyo-tower.jpeg) no-repeat center center;
       background-size: cover; }
   .card .upper.kinkaku {
-    background: url(../../images/kinkaku.jpeg) no-repeat center center;
+    background: url(../images/kinkaku.jpeg) no-repeat center center;
       background-size: cover; }
   .card .upper.nunobiki {
-    background: url(../../images/nunobiki.jpeg) no-repeat center center;
+    background: url(../images/nunobiki.jpeg) no-repeat center center;
       background-size: cover; }
   .card .upper.kenrokuen {
-    background: url(../../images/kenrokuen.jpeg) no-repeat center center;
+    background: url(../images/kenrokuen.jpeg) no-repeat center center;
       background-size: cover; }
   .card .upper .badge {
     position: absolute;
