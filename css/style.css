@@ -269,7 +269,7 @@ h3.sectionTitle {
     left: 0;
     width: 30%;
     height: 2px;
-    background-color: #FFD700; }
+    background: linear-gradient(to right, #FF8D8D, #FFD700); }
 
 a.allView {
   display: block;
