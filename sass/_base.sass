@@ -191,10 +191,12 @@ header
         +boxshadow(.5px 2px 1px #ddd)
         border-radius: 3px
         margin: .5em
+        transition: .2s
         +w(1000px)
             +flexitem(0, 1, split(4.3))
         &:hover
             +boxshadow(.5px 2px 1px #ccc)
+            +translateY(-2px)
 
 .card
     .upper

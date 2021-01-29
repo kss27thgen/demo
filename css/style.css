@@ -548,7 +548,8 @@ header {
     -ms-box-shadow: 0.5px 2px 1px #ddd;
     box-shadow: 0.5px 2px 1px #ddd;
     border-radius: 3px;
-    margin: .5em; }
+    margin: .5em;
+    transition: .2s; }
     @media (min-width: 1000px) {
       .toursSection li {
         -webkit-flex: 0 1 23.25581%;
@@ -558,7 +559,9 @@ header {
     .toursSection li:hover {
       -webkit-box-shadow: 0.5px 2px 1px #ccc;
       -ms-box-shadow: 0.5px 2px 1px #ccc;
-      box-shadow: 0.5px 2px 1px #ccc; }
+      box-shadow: 0.5px 2px 1px #ccc;
+      -webkit-transform: translateY(-2px);
+      transform: translateY(-2px); }
 
 .card .upper {
   position: relative;
