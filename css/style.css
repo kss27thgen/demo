@@ -280,6 +280,9 @@ a.allView {
   border: 1.5px solid #FFD700;
   padding: .5em 0;
   margin: 0 auto; }
+  a.allView:hover {
+    color: #fff;
+    background: linear-gradient(45deg, #FF8D8D, #FFD700); }
 
 header {
   display: -ms-flexbox;
@@ -290,7 +293,7 @@ header {
   display: flex;
   align-items: center;
   color: #fff;
-  background-color: #fdaba9;
+  background-color: #FF8D8D;
   padding: 1em 2.5em; }
   header h1 {
     font-size: 2.5em; }
@@ -325,19 +328,19 @@ header {
   background-position: center;
   padding: 5em 2.5em; }
   .mvSection .catch {
-    font-size: 1.75em;
+    font-size: 2em;
     text-align: center;
-    text-shadow: 1px 1px 1px #aaa;
+    text-shadow: 3px 3px 3px #888;
     margin-bottom: 2.5em; }
-    @media (min-width: 800px) {
+    @media (min-width: 900px) {
       .mvSection .catch {
-        font-size: 2.25em; } }
+        font-size: 2.75em; } }
   .mvSection .searchBox {
     text-align: center; }
     .mvSection .searchBox em {
       font-size: 1.25em;
       text-shadow: 1px 1px 1px #aaa; }
-    .mvSection .searchBox .selects {
+    .mvSection .searchBox .themes {
       display: -ms-flexbox;
       /* prefix -> -webkit-*/
       display: -webkit-flex;
@@ -348,9 +351,23 @@ header {
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 1em; }
-      .mvSection .searchBox .selects select {
+      .mvSection .searchBox .themes button {
+        display: -ms-flexbox;
+        /* prefix -> -webkit-*/
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        /* no prefix*/
+        display: flex;
+        align-items: center;
         font-size: .9em;
-        margin: .25em; }
+        opacity: .8;
+        padding: 1em 2em;
+        margin: .25em;
+        outline: none; }
+        .mvSection .searchBox .themes button:hover {
+          opacity: 1; }
+        .mvSection .searchBox .themes button i {
+          margin-left: .5em; }
     .mvSection .searchBox .searchBar {
       display: -ms-flexbox;
       /* prefix -> -webkit-*/
@@ -363,7 +380,7 @@ header {
         width: 20em; }
       .mvSection .searchBox .searchBar input[type=submit] {
         color: #fff;
-        background-color: #fdaba9; }
+        background-color: #FF8D8D; }
 
 .copySection {
   padding: 5em 1.5em 2.5em;
@@ -390,7 +407,7 @@ header {
   max-width: 1000px;
   margin-right: auto;
   margin-left: auto;
-  padding: 2.5em 1.5em 5em; }
+  padding: 5em 1.5em 5em; }
   .areaSection h3 {
     text-align: center;
     font-size: 1.5em;
@@ -468,27 +485,18 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 2.5em; }
-    .aboutSection .upper .left {
-      position: relative; }
-      .aboutSection .upper .left:after {
-        position: absolute;
-        top: 0em;
-        right: 0;
-        bottom: 0;
-        left: 0em;
-        -webkit-transform: translate(-1em, -1em);
-        transform: translate(-1em, -1em);
-        content: '';
-        background: linear-gradient(45deg, #fdaba9, #FFD700);
-        z-index: -1; }
-      .aboutSection .upper .left img {
-        height: 20em; }
+    .aboutSection .upper .left img {
+      height: 20em; }
     .aboutSection .upper .right {
       margin-left: -2.5em;
+      margin-top: 2em;
       z-index: 5; }
       .aboutSection .upper .right h3 {
         font-size: 1.25em;
-        background: linear-gradient(transparent 40%, #FFD700 20%); }
+        background: linear-gradient(transparent 40%, #FF8D8D 20%);
+        margin-bottom: 1em; }
+      .aboutSection .upper .right p {
+        line-height: 2.5; }
   .aboutSection .bottom ul {
     display: -ms-flexbox;
     /* prefix -> -webkit-*/
@@ -512,22 +520,25 @@ header {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding: 2.5em 1.5em; }
+  padding: 5em 1.5em; }
   .toursSection .subTitle {
-    margin-bottom: 1em; }
+    margin-bottom: 2.5em; }
   .toursSection h4 {
     display: inline-block;
     font-size: 1.5em;
-    background: linear-gradient(transparent 60%, #FFD700 10%); }
+    background: linear-gradient(transparent 60%, #FFD700 10%);
+    margin-bottom: 1em; }
   .toursSection ul {
     display: -ms-flexbox;
     /* prefix -> -webkit-*/
     display: -webkit-flex;
     -webkit-flex-wrap: wrap;
+    -webkit-justify-content: center;
     /* no prefix*/
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 2em; }
+    justify-content: center;
+    margin-bottom: 2.5em; }
   .toursSection li {
     -webkit-flex: 0 1 43.47826%;
     flex: 0 1 43.47826%;
@@ -544,6 +555,10 @@ header {
         flex: 0 1 23.25581%;
         width: 23.25581%;
         max-width: 23.25581%; } }
+    .toursSection li:hover {
+      -webkit-box-shadow: 0.5px 2px 1px #ccc;
+      -ms-box-shadow: 0.5px 2px 1px #ccc;
+      box-shadow: 0.5px 2px 1px #ccc; }
 
 .card .upper {
   position: relative;
@@ -577,7 +592,7 @@ header {
     top: 0.25em;
     left: 0.25em;
     color: #fff;
-    background-color: #fdaba9;
+    background-color: #FF8D8D;
     border-radius: 5px;
     padding: .2em; }
 
@@ -592,7 +607,7 @@ header {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding: 2.5em 1.5em 5em; }
+  padding: 2.5em 1.5em 7.5em; }
   .newsSection h3 {
     margin-bottom: 1em; }
   .newsSection ul {
@@ -622,7 +637,7 @@ header {
 
 footer {
   color: #fff;
-  background-color: #fdaba9;
+  background-color: #FF8D8D;
   padding: 2.5em 0;
   text-align: center; }
   footer nav {
